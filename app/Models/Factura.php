@@ -13,4 +13,9 @@ class Factura extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function compra()
+    {
+        return $this->belongsTo(Compra::class);
+    }
 }
