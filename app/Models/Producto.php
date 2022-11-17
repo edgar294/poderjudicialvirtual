@@ -10,4 +10,9 @@ class Producto extends Model
     use HasFactory;
 
     protected $fillable = ["nombre", "precio", "impuesto"];
+
+    public function compras()
+    {
+        return $this->belongsToMany(Compra::class);
+    }
 }
