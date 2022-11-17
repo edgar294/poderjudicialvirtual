@@ -15,9 +15,8 @@ class CreateComprasTable extends Migration
     {
         Schema::create('compras', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
-            $table->foreignId('producto_id')->constrained()->cascadeOnDelete();
-            $table->foreignId('factura_id')->nullable()->constrained()->cascadeOnDelete();
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreignId('producto_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
             $table->decimal('precio', 8, 2)->comment('Precio del producto sin impuesto incluido');
             $table->decimal('impuesto', 8, 2)->comment('Impuesto');
             $table->timestamps();
