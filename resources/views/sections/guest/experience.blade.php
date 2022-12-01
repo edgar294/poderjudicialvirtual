@@ -1,35 +1,24 @@
 <div class="resume-section-content">
-    <h2 class="mb-5">Experience</h2>
+    <h2 class="mb-5">Experiencia</h2>
     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
         <div class="flex-grow-1">
-            <h3 class="mb-0">Senior Web Developer</h3>
-            <div class="subheading mb-3">Intelitec Solutions</div>
-            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+            <h3 class="mb-0">Senior PHP / Laravel Developer</h3>
+            <div class="subheading mb-3">Backend Developer</div>
+            <p>Amplia experiencia en el diseño y desarrollo de aplicaciones backend utilizando la tecnología PHP junto al framework Laravel, para maximizar el alcance de cada proyecto. Mis conocimientos incluyen: Desarrollo de Test Unitarios, Jobs, Listeners, Events, Middlewares y una gran cantidad de experiencia donde he utilizado estas herramientas. Tambien he desarrollado APIs usando autenticacion JWT para mantener un grado de seguridad elevado en las aplicaciones</p>
         </div>
-        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
     </div>
     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
         <div class="flex-grow-1">
-            <h3 class="mb-0">Web Developer</h3>
-            <div class="subheading mb-3">Intelitec Solutions</div>
-            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+            <h3 class="mb-0">Senior VueJs 3 Developer</h3>
+            <div class="subheading mb-3">Frontend Developer</div>
+            <p>Amplia experiencia desarrollando aplicaciones reactivas utilizando principalmente el framework VueJs en su version mas actualizada. Para las aplicaciones que he desarrollado he implementado las principales herramientas que este framework ofrece como con la comunicación entre componentes, vue router, almacenamiento en memoria con pinia y mucho mas.</p>
         </div>
-        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
     </div>
     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
         <div class="flex-grow-1">
-            <h3 class="mb-0">Junior Web Designer</h3>
-            <div class="subheading mb-3">Shout! Media Productions</div>
-            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+            <h3 class="mb-0">Arquitecto de Softwaere</h3>
+            <div class="subheading mb-3">Diseño de Software</div>
+            <p>Tengo los conocimientos para diseñar y desarrollar casi cualquier software que las tecnologías web me permite. Tengo amplia experiencia desde el levantamiento de información, diseño de la base de datos, definición de la arquitectura de software a utilizar hasta ejecutar el proyecto</p>
         </div>
-        <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
-    </div>
-    <div class="d-flex flex-column flex-md-row justify-content-between">
-        <div class="flex-grow-1">
-            <h3 class="mb-0">Web Design Intern</h3>
-            <div class="subheading mb-3">Shout! Media Productions</div>
-            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-        </div>
-        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
     </div>
 </div>

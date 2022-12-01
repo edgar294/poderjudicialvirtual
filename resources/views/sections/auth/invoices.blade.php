@@ -10,9 +10,10 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Cliente</th>
-                <th scope="col">Producto</th>
-                <th scope="col">Precio</th>
+                <th scope="col">Subtotal</th>
                 <th scope="col">Impuesto</th>
+                <th scope="col">Total</th>
+                <th scope="col">Detalle</th>
             </tr>
         </thead>
         <tbody>
@@ -20,9 +21,16 @@
                 <tr>
                     <th scope="row">{{ $factura->id }}</th>
                     <td>{{ $factura->user->name }}</td>
-                    <td>{{ $factura->compra->producto->nombre }}</td>
-                    <td>{{ number_format($factura->costo, 2) }}</td>
-                    <td>{{ number_format($factura->impuesto, 2) }}%</td>
+                    <td>{{ number_format($factura->total_costo, 2) }}</td>
+                    <td>{{ number_format($factura->total_impuesto, 2) }}</td>
+                    <td>{{ number_format($factura->total_costo + $factura->total_impuesto, 2) }}</td>
+                    <td>
+                        <a href="{{ route('compras.show', ['id' => $factura->id]) }}">
+                            <button type="button" class="btn btn-info">
+                                Ver Detalles
+                            </button>
+                        </a>
+                    </td>
                 </tr>
             @endforeach
         </tbody>
