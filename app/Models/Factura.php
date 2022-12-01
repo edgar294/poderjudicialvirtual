@@ -9,6 +9,8 @@ class Factura extends Model
 {
     use HasFactory;
 
+    protected $fillable = ["user_id", "total_costo", "total_impuesto"];
+
     public function user()
     {
         return $this->belongsTo(User::class);
@@ -17,5 +19,10 @@ class Factura extends Model
     public function compra()
     {
         return $this->belongsTo(Compra::class);
+    }
+
+    public function detalles()
+    {
+        return $this->hasMany(DetalleFactura::class);
     }
 }

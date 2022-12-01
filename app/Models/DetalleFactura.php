@@ -5,15 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Compra extends Model
+class DetalleFactura extends Model
 {
     use HasFactory;
 
-    protected $fillable = ["user_id", "producto_id", "precio", "impuesto"];
+    protected $fillable = ["factura_id", "producto_id", "costo", "impuesto"];
 
-    public function user()
+    public function factura()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(factura::class);
     }
 
     public function producto()
