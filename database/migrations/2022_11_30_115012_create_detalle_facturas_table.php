@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateComprasTable extends Migration
+class CreateDetalleFacturasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateComprasTable extends Migration
      */
     public function up()
     {
-        Schema::create('compras', function (Blueprint $table) {
+        Schema::create('detalle_facturas', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreignId('factura_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
             $table->foreignId('producto_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
-            $table->decimal('precio', 8, 2)->comment('Precio del producto sin impuesto incluido');
-            $table->decimal('impuesto', 8, 2)->comment('Impuesto');
-            $table->boolean('facturado')->default(0)->comment('Si la compra fue facturada o no');
+            $table->decimal('costo', 8, 2)->comment('Costo del producto');
+            $table->decimal('impuesto', 8, 2)->comment('Impuesto sobre el producto');
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class CreateComprasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('compras');
+        Schema::dropIfExists('detalle_facturas');
     }
 }

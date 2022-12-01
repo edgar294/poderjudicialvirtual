@@ -16,9 +16,8 @@ class CreateFacturasTable extends Migration
         Schema::create('facturas', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
-            $table->foreignId('compra_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
-            $table->decimal('costo', 8, 2)->comment('Costo del producto');
-            $table->decimal('impuesto', 8, 2)->comment('Impuesto sobre el producto');
+            $table->decimal('total_costo', 8, 2)->comment('Total Monto de la factura');
+            $table->decimal('total_impuesto', 8, 2)->comment('Total Impuesto de la factura');
             $table->timestamps();
         });
     }
