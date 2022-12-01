@@ -41,11 +41,19 @@ php artisan key:generate
 ```sh
 php artisan migrate --seed
 ```
+- Instalar paquetes con
+```sh
+npm install
+```
+- Compilar paquetes con
+```sh
+npm run dev
+```
 - Ejecutar proyecto en el puerto 8000 con
 ```sh
 php artisan serve
 ```
 
 Crecenciales del usuario administrador:
-correo: edgar@correo.com
-password: password
+- correo: edgar@correo.com
+- password: password
